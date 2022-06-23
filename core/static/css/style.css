@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    box-sizing: border-box;
+    background-color: rgb(47, 0, 90);
+    color: white;
+}
+
+table{
+    width: 80%;
+    height: auto;
+    margin: 3% auto auto auto;
+    min-width: 400px;
+    text-align: left;
+}
+
+h1, h2, h3{
+    margin: 2%;
+}
+
+th{
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+td{
+    width: auto;
+    height: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+td:hover{
+    background-color: rgba(248, 248, 248, 0.562);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+    color: rgb(255, 251, 0);
+}

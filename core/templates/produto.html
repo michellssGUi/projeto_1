@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,35 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUi - Projeto 1</title>
+    <title>GUi - Projeto 1 - Produto</title>
 
     <!--Styles-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
     <main>
         <center>
-            <h1>{{ nome }}</h1>
-            <h2>{{ curso }}</h2>
-            <h3>{{ outro }} - {{ fone }}</h3>
-
+            <h1>Produto</h1>
             <table>
-                <h2>Lista de Produtos</h2>
                 <thead>
                     <th>Produto</th>
                     <th>Preço</th>
+                    <th>Estoque</th>
                 </thead>
-                {% for produto in produtos %}
 
                 <tbody>
-                    <td><a href="{% url 'produto' produto.id %}">{{produto.nome}}</a></td>
+                    <td>{{produto.nome}}</td>
                     <td>R$ {{produto.preco}}</td>
+                    <td>{{produto.estoque}}</td>
                 </tbody>
 
-                {% endfor %}
             </table>
         </center>
+        <a href="{% url 'index' %}">Voltar</a>
     </main>
 </body>
 
